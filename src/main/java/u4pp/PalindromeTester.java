@@ -11,6 +11,7 @@ public class PalindromeTester {
     public static void execute(Scanner sc) 
     {
         /* YOUR CODE HERE */
+    	// booleans will control how the while loops funciton and make it easy to end the methods/program
     	boolean balls = true;
     	boolean greeft = true;
     	System.out.println("Welcome to Palindrome Tester");
@@ -74,6 +75,7 @@ public class PalindromeTester {
         	return false;
         }
     }
+    // no as a method should clean up the input removing numbers, spaces, and symbols so that it can actually be tested for being a palindrome
     private static String no(String poob)
     {
     	int fet = poob.length() -1;
@@ -124,10 +126,4 @@ public class PalindromeTester {
     	}
     }
     /* Any helper methods you might need */
-    public static void main (String[] args) 
-    {
-		Scanner myScanner = new Scanner(System.in);
-		PalindromeTester.execute(myScanner);
-		myScanner.close();
-	}
 }
